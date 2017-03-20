@@ -1,30 +1,31 @@
 #include "StackV.h"
+#include <iostream>
 
-int StackV::size()
+int Stack::size()
 {
 	return data.size();
 }
 
-void StackV::push(int a)
+void Stack::push(int a)
 {
 	data.push_back(a);
 }
 
-void StackV::pop()
+void Stack::pop()
 {
 	data.pop_back();
 }
 
-int StackV::top()
+int Stack::top()
 {
 	return data[size()-1];
 }
 
-void StackV::clear()
+void Stack::clear()
 {
-	for {int i = 1; i <= ob.size; i++}
+	for (int i = 1; i <= data.size(); i++)
 	{
-		cout << ob.top() << endl;
-		ob.pop();
+		cout << top() << endl;
+		pop();
 	}
 }

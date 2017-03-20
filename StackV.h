@@ -11,7 +11,8 @@ class Stack
 private:
 
       vector<int> data;
-  
+  	
+
 
 public:
 
